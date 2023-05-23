@@ -1,0 +1,80 @@
+html body {
+    background-image: -webkit-linear-gradient(145deg, #0081C9 50%, #5BC0F8 50%);
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+    width: 25%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    background-color: white;
+    border: none;
+    margin: 50px 0 50px 0;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+    border-bottom: .5px solid rgb(184, 184, 184);
+    margin: 0;
+    display: flex;
+    position: relative
+}
+
+.delete {
+    color: #0081C9;
+    height: 30%;
+    position: absolute;
+    top: 28px;
+    left: 90%
+}
+
+input[type=checkbox] {
+    padding: 10px;
+    margin: 20px;
+}
+
+form input[type=text] {
+    padding: 15px;
+    height: 50px;
+    width: 355px;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+}
+
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #0081C9;
+}
+
+button {
+    background-color: #0081C9;
+    color: white;
+    border-radius: 50%;
+    font-size: 35px;
+    border: none;
+    min-height: 45px;
+    width: 45px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+}
+
+#header {
+    background-color: #0081C9;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 8px 0 8px ;
+    font-size: 35px;
+}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b5f05d499.js" crossorigin="anonymous"></script> 
+
+  
+    
+
+    <link rel="stylesheet" href="/styles.css">
+
+   
+    <title>Todo tracker</title>
+</head>
+<body>
+
+    <div class="box" id="header">
+        <h1> <%= currentList %> list</h1>
+    </div>
+    <div class="box">
+    
+        <% for(let i = 0; i < addItem.length; i++ ) { %>
+            <div class="item">
+                <input type="checkbox">
+                <p> <%= addItem[i] %> </p>
+                <i class="fa-solid fa-trash delete"></i>
+            </div>
+        <% } %>
+        
+        <form action="/" method='post'>
+            <input type="text" name='userInput' maxlength="30" autocomplete="off" required>
+            <button id='userInput' name='list' value=<%= currentList %> >+</button>
+        </form>
+    </div>
+
+</body>
+</html>
